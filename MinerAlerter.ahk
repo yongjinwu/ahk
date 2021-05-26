@@ -6,7 +6,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 
 Folder=C:\Users\Yong\Desktop\PhoenixMiner_5.4c_Windows_AMD_NVIDIA.Password-phoenix\PhoenixMiner_5.4c_Windows_AMD_NVIDIA (Password-phoenix)
-getlastfolder(folder, file)
+
 
 
 
@@ -34,7 +34,7 @@ getlastfolder(byref Folder,byref file="")
 
 Loop
 {
-
+getlastfolder(folder, file)
 Loop, read, %folder%/%file%
 {
 	LastLine := A_LoopReadLine
